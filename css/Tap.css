@@ -1,0 +1,348 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    transition: 0.5s linear;
+    user-select: none;
+}
+.__tapswap__{
+    background: #ababab;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+.__tapSwapMain__{
+    width: 450px;
+    height: 100%;
+    margin: auto;
+    background: rgb(23, 6, 40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.tab-btn img{
+    width: 100%;
+    height: 100%;
+}
+.Tapcontents{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: .3rem .6rem;
+}
+.tapCoinPrice{
+    height: 150px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+
+}
+.tab-bttm{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+.__tab__{
+    height: 350px;
+    width: 100%;
+    position: relative;
+}
+.tab-btn{
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.__btn_tools__{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.top1{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.top1 span{
+    color: #fff;
+    font-weight: 800;
+    font-family: monospace;
+    font-size: 1.6rem;
+}
+.top1 span.remain{
+    color: orange;
+}
+.tools{
+    width: calc(70% / 5);
+    height: 70px;
+    border: solid 1px orange;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    color: orange;
+}
+.tools:active{
+    background:gray ;
+}
+.smcoin{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.d{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.tapBalance{
+    font-size: 3em;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.league{
+    color: gray;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.progress1{
+    width: 90%;
+    height: 20px;
+    border-radius: 10px;
+    border: solid 1px goldenrod;
+    padding: 3px;
+}
+.progvalue{
+    background:goldenrod ;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.tapPopout{
+    position: absolute;
+    z-index: 10;
+    font-size: 2em;
+    color: #bf0606;
+    font-weight: 600;
+    animation: slidup 2s linear;
+}
+@keyframes slidup {
+    100%{
+        top: -80px;
+        opacity: 0;
+    }
+}
+.RefPageN{
+    height: 500px;
+    width: 450px;
+    display: flex;
+    background: transparent;
+    backdrop-filter: blur(17px);
+    top: 20px;
+    position: absolute;
+}
+.coverWrapper{
+    width: 100%;
+    height: 100%;
+    /* dis */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    padding: 10px;
+    background:#1d0931;
+}
+.booster{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.booster h4{
+    color: #fff;
+    font-weight:400;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.secbooster{
+    display: flex;
+    width: 100%;
+    /* border: solid gray 1px; */
+    height: 15%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.boostparent1{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    border: solid 1px #393737;
+    border-radius: 10px;
+    background: #20103b;
+    cursor: pointer;
+}
+.boostparent2{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    border-radius: 10px;
+    background: #20103b;
+    border: solid 1px #393737;
+    cursor: pointer;
+}
+.shower{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.spanforItag{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bb{
+    color: gold;
+}
+.forI_Tag{
+    height: 100%;
+    display: flex;
+    width: 100%;
+}
+.forBOstStus{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+}
+.forBOstStus h5{
+    font-family: sans-serif;
+    color: gold;
+    font-weight: 600;
+    font-size: 15px;
+}
+.forBOstStus p{
+    font-family: monospace;
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+}
+.emmanuel{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    background: #20103b;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.paring{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.noneoftheo{
+    height: 100%;
+    width: 25%;
+    /* border: solid 1px red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bgb{
+    color: gold;
+}
+.hghggh{
+    height: 100%;
+    width: 60%;
+    /* border: solid 1px rgb(26, 91, 88); */
+    display: flex;
+}
+.nbbm{
+    height: 100%;
+    width: 15%;
+    /* border: solid 1px rgb(137, 9, 79); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bcc{
+    color:gold ;
+    font-size: 1.5em;
+}
+.rtr{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.rtr p{
+    font-family: cursive;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+.h9s{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    /* border: solid 1px blueviolet; */
+    align-items: center;
+    gap: 10px;
+}
+.disa{
+    color: gold;
+}
+.h9s h5{
+    color: gold;
+    font-family: monospace;
+    font-size: 14px;
+}
+.hghggh1{
+    height: 100%;
+    width: 75%;
+    /* border: solid 1px rgb(26, 91, 88); */
+    display: flex;
+}
+.notificationWrap{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    background-color: orange;
+}
