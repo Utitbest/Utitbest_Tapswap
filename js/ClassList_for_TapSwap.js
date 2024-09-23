@@ -81,4 +81,4 @@ let tapObject = {
     sliderPosition:100
 
 }
-localStorage.setItem('UtitbestTap', JSON.stringify(tapObject))   
+// localStorage.setItem('UtitbestTap', JSON.stringify(tapObject))   
